@@ -1,0 +1,28 @@
+[package]
+name = "libera"
+description = "liberating libraries and utilities"
+version = "0.0.1"
+edition = "2018"
+rust-version = "1.61.0"
+authors = ["José Luis Cruz <joseluis@andamira.net>"]
+repository = "https://github.com/andamira/libera"
+documentation = "https://docs.rs/libera"
+license = "MIT/Apache-2.0"
+include = [
+	"src/**/*.rs",
+	"Cargo.toml",
+	"doc/LICENSE*",
+	"/README.md",
+]
+categories = []
+keywords = []
+publish = true
+
+[dependencies]
+
+[dev-dependencies]
+
+[build-dependencies]
+
+[badges]
+maintenance = { status = "actively-developed" }

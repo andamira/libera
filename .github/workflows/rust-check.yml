@@ -1,0 +1,17 @@
+name: Rust Checks
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: icepuma/rust-action@master
+        with:
+          # NOTE: uncomment the desired checks by github
+          # args: cargo fmt -- --check
+          # args: cargo fmt -- --check && cargo test
+          # args: cargo fmt -- --check && cargo clippy -- -Dwarnings
+          # args: cargo fmt -- --check && cargo clippy -- -Dwarnings && cargo test

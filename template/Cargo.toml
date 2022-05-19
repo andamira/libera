@@ -1,0 +1,32 @@
+[package]
+name = "_CRATENAME_"
+description = ""
+version = "0.0.0"
+edition = "2021"
+rust-version = "1.61.0"
+authors = ["NAME <email@domain>"]
+# repository = "https://github.com/_USER_/_CRATENAME_"
+# documentation = "https://docs.rs/_CRATENAME_"
+license = "MIT/Apache-2.0"
+include = [
+	"src/**/*.rs",
+	"Cargo.toml",
+	"doc/LICENSE*",
+	"/README.md",
+]
+categories = []
+keywords = []
+publish = false
+
+[dependencies]
+
+[dev-dependencies]
+
+[build-dependencies]
+
+[package.metadata.docs.rs]
+# rustdoc-args = [ "--html-in-header", "./res/docs-header.html" ]
+
+[badges]
+# https://doc.rust-lang.org/cargo/reference/manifest.html#the-badges-section
+maintenance = { status = "actively-developed" }
