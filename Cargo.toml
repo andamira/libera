@@ -20,9 +20,11 @@ publish = true
 
 [dependencies]
 
-[dev-dependencies]
+[features]
+default = ["std"]
+std = []
 
-[build-dependencies]
+[dev-dependencies]
 
 [badges]
 maintenance = { status = "actively-developed" }

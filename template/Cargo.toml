@@ -20,6 +20,10 @@ publish = false
 
 [dependencies]
 
+[features]
+default = ["std"]
+std = []
+
 [dev-dependencies]
 
 [build-dependencies]
