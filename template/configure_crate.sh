@@ -54,10 +54,6 @@ ask=$(grep "_CRATENAME_" Cargo.toml)
 if [[ $? -ne 0 ]]; then ((res+=1)); fi
 if [[ -z $ask ]]; then ((res+=1)); fi
 
-ask=$(grep -r "_CRATENAME_" .git/)
-if [[ $? -ne 0 ]]; then ((res+=1)); fi
-if [[ -z $ask ]]; then ((res+=1)); fi
-
 if [[ res -ne 0 ]]; then
 	echo "I'm sorry, this template has already been modifed. Aborting..."
 	exit 4
@@ -83,8 +79,7 @@ if [[ $LIBERA_CONFIRM_CRATE_CONFIGURATION ]]; then
 	mv "_info/info-.md" "_info/info-$CRATENAME.md"
 	sed -i "s/_CRATENAME_/$CRATENAME/g" "_info/info-$CRATENAME.md"
 
-	echo "- deleting '.git' and creating a new one..."
-	rm -rf .git
+	echo "- creating a new git repository..."
 	git init --quiet
 
 	echo "- updating '.gitignore'..."
