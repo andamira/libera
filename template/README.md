@@ -1,5 +1,3 @@
-# _CRATENAME_
-
 <!--
 [![Crate](https://img.shields.io/crates/v/_CRATENAME_.svg)](https://crates.io/crates/_CRATENAME_)
 [![API](https://docs.rs/_CRATENAME_/badge.svg)](https://docs.rs/_CRATENAME_/)
