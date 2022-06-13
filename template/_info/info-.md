@@ -1,4 +1,4 @@
-# _template_ INFO
+# _CRATENAME_ INFO
 > 
 
 
