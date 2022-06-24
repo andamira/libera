@@ -1,6 +1,6 @@
 [![Crate](https://img.shields.io/crates/v/libera.svg)](https://crates.io/crates/libera)
 [![API](https://docs.rs/libera/badge.svg)](https://docs.rs/libera/)
-[![Lines Of Code](https://tokei.rs/b1/github/andamira/libera?category=code)](https://github.com/andamira/libera)
+[![Lines Of Code](https://tokei.rs/b1/github/andamira/libera?category=lines)](https://github.com/andamira/libera)
 
 # libera
 
