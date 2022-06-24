@@ -18,7 +18,8 @@ enter it and run `./configure_crate.sh name`.
 
 ### functions
 
-- `project_root_path*` returns a path relative to the project's root.
+- `project_root_path*`: returns a path relative to the current project's root.
+- `counter_string`: returns a string where you always know each character's position.
 
 ### liberaries
 

@@ -17,3 +17,6 @@
 mod project;
 #[cfg(feature = "std")]
 pub use project::{project_root_path, project_root_path_string};
+
+mod string;
+pub use string::counter_string;

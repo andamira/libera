@@ -3,7 +3,7 @@
 [package]
 name = "libera"
 description = "liberating libraries and utilities"
-version = "0.0.2"
+version = "0.0.3"
 edition = "2021"
 rust-version = "1.61.0"
 authors = ["José Luis Cruz <joseluis@andamira.net>"]
