@@ -13,7 +13,12 @@ by facilitating versatile abstractions that are easy to use and understand.
 ### template
 A handy starting point for a new liberating project.
 
-Copy the `template/` directory to the desired location using a new `name`, enter it and run `./configure_crate.sh name`.
+Copy the `template/` directory to the desired location using a new `name`,
+enter it and run `./configure_crate.sh name`.
+
+### functions
+
+- `project_root_path*` returns a path relative to the project's root.
 
 ### liberaries
 

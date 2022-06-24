@@ -11,5 +11,9 @@
     clippy::pattern_type_mismatch
 )]
 #![forbid(unsafe_code)]
-
 #![cfg_attr(not(feature = "std"), no_std)]
+
+#[cfg(feature = "std")]
+mod project;
+#[cfg(feature = "std")]
+pub use project::{project_root_path, project_root_path_string};
