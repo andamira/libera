@@ -13,6 +13,8 @@
 #![forbid(unsafe_code)]
 #![cfg_attr(not(feature = "std"), no_std)]
 
+mod macros;
+
 #[cfg(feature = "std")]
 mod project;
 #[cfg(feature = "std")]
