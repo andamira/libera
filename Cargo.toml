@@ -5,16 +5,17 @@ name = "libera"
 description = "liberating libraries and utilities"
 version = "0.0.3"
 edition = "2021"
-rust-version = "1.61.0"
+rust-version = "1.63.0"
 authors = ["José Luis Cruz <joseluis@andamira.net>"]
 repository = "https://github.com/andamira/libera"
 documentation = "https://docs.rs/libera"
-license = "MIT/Apache-2.0"
+license = "MIT OR Apache-2.0"
 include = [
-	"src/**/*.rs",
+	"/src/**/*.rs",
 	"/Cargo.toml",
-	"/doc/LICENSE*",
+	"/res/*",
 	"/README.md",
+	"/LICENSE-*",
 ]
 categories = []
 keywords = []
@@ -29,4 +30,6 @@ std = []
 [dev-dependencies]
 
 [badges]
-maintenance = { status = "actively-developed" }
+# actively-developed, passively-maintained, looking-for-maintainer, as-is,
+# experimental, deprecated, none
+maintenance = { status = "experimental" }
