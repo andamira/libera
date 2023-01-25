@@ -25,7 +25,7 @@ pub fn counter_string(mut length: usize) -> String {
         tmpstr.push_str(&length.to_string().chars().rev().collect::<String>());
 
         if tmpstr.len() > length {
-            tmpstr = tmpstr[..length as usize].to_string();
+            tmpstr = tmpstr[..length].to_string();
         }
 
         cstr.push_str(&tmpstr);
