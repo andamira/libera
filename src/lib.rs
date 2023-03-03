@@ -1,5 +1,6 @@
-// libera::lib
-//!
+// libera
+//
+//! A suite of coherent multidisciplinary libraries.
 //
 
 #![warn(clippy::all)]
@@ -12,13 +13,3 @@
 )]
 #![forbid(unsafe_code)]
 #![cfg_attr(not(feature = "std"), no_std)]
-
-mod macros;
-
-#[cfg(feature = "std")]
-mod project;
-#[cfg(feature = "std")]
-pub use project::{project_root_path, project_root_path_string};
-
-mod string;
-pub use string::counter_string;
