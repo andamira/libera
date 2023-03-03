@@ -1,30 +1,36 @@
+# libera
+
 [![Crate](https://img.shields.io/crates/v/libera.svg)](https://crates.io/crates/libera)
 [![API](https://docs.rs/libera/badge.svg)](https://docs.rs/libera/)
 [![Lines Of Code](https://tokei.rs/b1/github/andamira/libera?category=lines)](https://github.com/andamira/libera)
 
-# libera
+A collection of Rust libraries designed to provide easy-to-use solutions across
+a varied range of fields and complementary needs.
 
-A meaningful collection of simple, interrelated libraries and small utilities
-aiming to liberate solo developers from the burden of unnecessary complexity,
-by facilitating versatile abstractions that are easy to use and understand.
+Each library is designed to be simple, intuitive, and modular.
 
-## Features
+They are intentionally interrelated, in order to provide a cohesive set of tools
+that work seamlessly together. This approach simplifies programming by reducing
+technical and cognitive complexity, allowing developers to focus on creating.
 
-### template
-A handy starting point for a new liberating project.
+## Liberaries 
 
-Copy the `template/` directory to the desired location using a new `name`,
-enter it and run `./configure_crate.sh name`.
+Here’s a list overview of the current libraries:
 
-### functions
-
-- `project_root_path*`: returns a path relative to the current project's root.
-- `counter_string`: returns a string where you always know each character's position.
-
-### liberaries
-
-*keep tuned*…
+- [`acolor`](https://crates.io/crates/acolor): color types and operations.
+- [`depura`](https://crates.io/crates/depura): logging, debugging, benchmarks.
+- [`devela`](https://crates.io/crates/devela): rust dev helpers & template.
+- [`espera`](https://crates.io/crates/espera): time management solutions.
+- [`fisica`](https://crates.io/crates/fisica): physics.
+- [`ladata`](https://crates.io/crates/ladata): mixed & modular data structures.
+- [`repite`](https://crates.io/crates/repite): loop rates & counters.
 
 ## Status
 
-This is an experimental work in progress.
+Libera’s libraries are currently in an experimental stage of development.
+
+## Contributing
+
+Contributions are welcomed to help refine and improve this library over time.
+If you notice a bug, have an idea for a new feature, or simply want to suggest
+improvements to the existing codebase, please don’t hesitate to get in touch.
