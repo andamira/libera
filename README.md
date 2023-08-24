@@ -2,7 +2,7 @@
 
 [![Crate](https://img.shields.io/crates/v/libera.svg)](https://crates.io/crates/libera)
 [![API](https://docs.rs/libera/badge.svg)](https://docs.rs/libera/)
-[![Lines Of Code](https://tokei.rs/b1/github/andamira/libera?category=lines)](https://github.com/andamira/libera)
+[![MSRV: 1.72.0](https://flat.badgen.net/badge/MSRV/1.72.0/purple)](https://releases.rs/docs/1.72.0/)
 
 A collection of Rust libraries designed to provide easy-to-use solutions across
 a varied range of fields and complementary needs.

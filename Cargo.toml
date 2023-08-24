@@ -1,17 +1,16 @@
-# https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [package]
 name = "libera"
-description = "liberating libraries and utilities"
+description = "a suite of liberating libraries"
 version = "0.0.3"
 edition = "2021"
-rust-version = "1.71.1" # sync with readme, check.sh & .github/workflows/check.yml
+rust-version = "1.72.0" # sync with readme, check.sh & .github/workflows/check.yml
 authors = ["José Luis Cruz <joseluis@andamira.net>"]
 repository = "https://github.com/andamira/libera"
 documentation = "https://docs.rs/libera"
 license = "MIT OR Apache-2.0"
 include = [
 	"/src/**/*.rs",
+	"/src/**/*.md",
 	"/Cargo.toml",
 	"/res/*.html",
 	"/README.md",
