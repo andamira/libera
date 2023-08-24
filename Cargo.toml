@@ -13,7 +13,7 @@ license = "MIT OR Apache-2.0"
 include = [
 	"/src/**/*.rs",
 	"/Cargo.toml",
-	"/res/*",
+	"/res/*.html",
 	"/README.md",
 	"/LICENSE-*",
 ]
@@ -29,7 +29,10 @@ std = []
 
 [dev-dependencies]
 
+
 [badges]
-# actively-developed, passively-maintained, looking-for-maintainer, as-is,
-# experimental, deprecated, none
 maintenance = { status = "experimental" }
+
+[package.metadata.docs.rs]
+features = ["std"]
+rustdoc-args = [ "--html-in-header", "./res/rustdoc-header.html" ]
