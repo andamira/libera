@@ -1,7 +1,7 @@
 [package]
 name = "libera"
 description = "a suite of liberating libraries"
-version = "0.0.3"
+version = "0.0.4"
 edition = "2021"
 rust-version = "1.72.0" # sync with readme, check.sh & .github/workflows/check.yml
 authors = ["José Luis Cruz <joseluis@andamira.net>"]
@@ -16,22 +16,152 @@ include = [
 	"/README.md",
 	"/LICENSE-*",
 ]
-categories = []
+categories = ["development-tools", "no-std::no-alloc"]
 keywords = []
 publish = true
 
-[dependencies]
 
 [features]
 default = ["std"]
-std = []
+
+#/ environment features /#
+
+std = [ # features that depend on the standard library
+	"alloc",
+	"acolor?/std",
+	"devela/std",
+	"depura?/std",
+	"espera?/std",
+	"ladata?/std",
+	"numera?/std",
+	# "revela?/std",
+	"textos?/std",
+]
+alloc = [ # features that depend on allocation
+	"acolor?/alloc",
+	"depura?/alloc",
+	"devela/alloc",
+	"espera?/alloc",
+	"ladata?/alloc",
+	"numera?/alloc",
+	# "revela?/alloc",
+	"textos?/alloc",
+]
+no_std = [ # features incompatible with "std"
+	"acolor?/no_std",
+	"depura?/no_std",
+	"devela/no_std",
+	"espera?/no_std",
+	"ladata?/no_std",
+	"numera?/no_std",
+	# "revela?/no_std",
+	"textos?/no_std",
+]
+
+#/ safety features /#
+
+safe = [ # forbid unsafe at the crate level
+	"acolor?/safe",
+	"depura?/safe",
+	"devela/safe",
+	"espera?/safe",
+	"ladata?/safe",
+	"numera?/safe",
+	"textos?/safe"
+	# "revela?/safe"
+]
+safest = [ # forbid unsafe recursively
+	"safe",
+	"acolor?/safest",
+	"depura?/safest",
+	"devela/safest",
+	"espera?/safest",
+	"ladata?/safest",
+	"numera?/safest",
+	# "revela?/safest"
+	"textos?/safest",
+]
+unsafe = [ # enable unsafe at the crate level
+	"acolor?/unsafe",
+	"depura?/unsafe",
+	"devela/unsafe",
+	"espera?/unsafe",
+	"ladata?/unsafe",
+	"numera?/unsafe",
+	# "revela?/unsafe",
+	"textos?/unsafe",
+]
+unsafest = [ # enable unsafe recursively
+	"unsafe",
+	"acolor?/unsafest",
+	"depura?/unsafest",
+	"devela/unsafest",
+	"espera?/unsafest",
+	"ladata?/unsafest",
+	"numera?/unsafest",
+	# "revela?/unsafest",
+	"textos?/unsafest",
+]
+
+#/ nightly features /#
+
+nightly = [ # used only for enhanced documentation
+	"acolor?/nightly",
+	"depura?/nightly",
+	"devela/nightly",
+	"espera?/nightly",
+	"ladata?/nightly",
+	"numera?/nightly",
+	# "revela?/nightly",
+	"textos?/nightly",
+]
+nightly_docs = [ # features for docs.rs
+	"nightly",
+	"std",
+	"all",
+	"unsafest",
+	"acolor/nightly_docs",
+	"depura/nightly_docs",
+	"devela/nightly_docs",
+	"espera/nightly_docs",
+	"ladata/nightly_docs",
+	"numera/nightly_docs",
+	# "revela/nightly_docs",
+	"textos/nightly_docs",
+]
+
+#/ other features /#
+
+all = [ # enable all optional libraries
+	"acolor",
+	"depura",
+	"espera",
+	"ladata",
+	"numera",
+	# "revela",
+	"textos"
+]
+
+
+[dependencies]
+
+# 8 optional libraries
+acolor = { version= "0.0.10", optional= true, default-features= false }
+depura = { version= "0.3.0", optional= true, default-features= false }
+devela = { version= "0.8.0", default-features= false } # not optional
+espera = { version= "0.3.0", optional= true, default-features= false }
+ladata = { version= "0.0.29", optional= true, default-features= false }
+numera = { version= "0.4.0", optional= true, default-features= false }
+# revela = { version= "0.0.8", optional= true, default-features= false }
+textos = { version= "0.0.3", optional= true, default-features= false }
 
 [dev-dependencies]
 
 
+[package.metadata.docs.rs]
+rustdoc-args = [ "--html-in-header", "./res/rustdoc-header.html" ]
+no-default-features = true
+features = ["nightly_docs"]
+
 [badges]
 maintenance = { status = "experimental" }
-
-[package.metadata.docs.rs]
-features = ["std"]
-rustdoc-args = [ "--html-in-header", "./res/rustdoc-header.html" ]

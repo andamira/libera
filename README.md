@@ -4,33 +4,40 @@
 [![API](https://docs.rs/libera/badge.svg)](https://docs.rs/libera/)
 [![MSRV: 1.72.0](https://flat.badgen.net/badge/MSRV/1.72.0/purple)](https://releases.rs/docs/1.72.0/)
 
+A suite of modular, multidisciplinary, mutually coherent libraries.
+
 A collection of Rust libraries designed to provide easy-to-use solutions across
 a varied range of fields and complementary needs.
 
-Each library is designed to be simple, intuitive, and modular.
+They are intended to be a cohesive set of tools that work seamlessly together,
+with a minimal amount of cognitive complexity.
 
-They are intentionally interrelated, in order to provide a cohesive set of tools
-that work seamlessly together. This approach simplifies programming by reducing
-technical and cognitive complexity, allowing developers to focus on creating.
+## Libraries
 
-## Liberaries 
-
-Here’s a list overview of the current libraries:
+Here’s a list overview of the current libraries, in alphabetic order.
 
 - [`acolor`](https://crates.io/crates/acolor): color types and operations.
 - [`depura`](https://crates.io/crates/depura): logging, debugging, benchmarks.
-- [`devela`](https://crates.io/crates/devela): rust dev helpers & template.
-- [`espera`](https://crates.io/crates/espera): time management solutions.
-- [`fisica`](https://crates.io/crates/fisica): physics.
+- [`devela`](https://crates.io/crates/devela): rust development extensions.
+- [`espera`](https://crates.io/crates/espera): time, date, rates, loop control.
 - [`ladata`](https://crates.io/crates/ladata): mixed & modular data structures.
-- [`repite`](https://crates.io/crates/repite): loop rates & counters.
+- [`numera`](https://crates.io/crates/numera): numbers, operations, numerals.
+- [`textos`](https://crates.io/crates/textos): strings, texts, unicode.
 
 ## Status
 
 Libera’s libraries are currently in an experimental stage of development.
 
+## License
+This project is dual licensed under either [MIT](LICENSE-MIT)
+or [Apache-2.0](LICENSE-APACHE) at your option.
+
 ## Contributing
 
 Contributions are welcomed to help refine and improve this library over time.
 If you notice a bug, have an idea for a new feature, or simply want to suggest
-improvements to the existing codebase, please don’t hesitate to get in touch.
+improvements to the existing codebase, please get in touch.
+
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in the work by shall be dual licensed as above,
+without any additional terms or conditions.
