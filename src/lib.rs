@@ -25,13 +25,14 @@ reexport![devela];
 reexport![
     acolor "acolor",
     depura "depura",
+    espera "espera",
     ladata "ladata",
     numera "numera",
+    // revela "revela",
     textos "textos",
-    // revela "revela", // FIXME libc
 ];
 
-/// All the types and traits are flat reexported here.
+/// All items are reexported here.
 pub mod all {
     use super::reexport;
 
@@ -39,9 +40,10 @@ pub mod all {
     reexport![@all
         acolor "acolor",
         depura "depura",
+        espera "espera",
         ladata "ladata",
         numera "numera",
+        // revela "revela",
         textos "textos",
-        // revela "revela", // FIXME libc
     ];
 }
