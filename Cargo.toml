@@ -30,32 +30,35 @@ default = ["std"]
 std = [ # enables features that depend on the standard library
 	"alloc",
 	"acolor?/std",
+	"alazar?/std",
 	"devela/std",
 	"depura?/std",
 	"espera?/std",
 	"ladata?/std",
 	"numera?/std",
-	# "revela?/std",
+	"revela?/std",
 	"textos?/std",
 ]
 alloc = [ # enables features that depend on allocation
 	"acolor?/alloc",
+	"alazar?/alloc",
 	"depura?/alloc",
 	"devela/alloc",
 	"espera?/alloc",
 	"ladata?/alloc",
 	"numera?/alloc",
-	# "revela?/alloc",
+	"revela?/alloc",
 	"textos?/alloc",
 ]
 no_std = [ # enables features incompatible with the standard library
 	"acolor?/no_std",
+	"alazar?/no_std",
 	"depura?/no_std",
 	"devela/no_std",
 	"espera?/no_std",
 	"ladata?/no_std",
 	"numera?/no_std",
-	# "revela?/no_std",
+	"revela?/no_std",
 	"textos?/no_std",
 ]
 
@@ -63,44 +66,48 @@ no_std = [ # enables features incompatible with the standard library
 
 safe = [ # forbids unsafe at each crate level
 	"acolor?/safe",
+	"alazar?/safe",
 	"depura?/safe",
 	"devela/safe",
 	"espera?/safe",
 	"ladata?/safe",
 	"numera?/safe",
-	# "revela?/safe",
+	"revela?/safe",
 	"textos?/safe"
 ]
 safest = [ # forbids unsafe recursively
 	"safe",
 	"acolor?/safest",
+	"alazar?/safest",
 	"depura?/safest",
 	"devela/safest",
 	"espera?/safest",
 	"ladata?/safest",
 	"numera?/safest",
-	# "revela?/safest",
+	"revela?/safest",
 	"textos?/safest",
 	]
 unsafe = [ # enables all unsafe features at each crate level
 	"acolor?/unsafe",
+	"alazar?/unsafe",
 	"depura?/unsafe",
 	"devela/unsafe",
 	"espera?/unsafe",
 	"ladata?/unsafe",
 	"numera?/unsafe",
-	# "revela?/unsafe",
+	"revela?/unsafe",
 	"textos?/unsafe",
 ]
 unsafest = [ # enables unsafe recursively
 	"unsafe",
 	"acolor?/unsafest",
+	"alazar?/unsafest",
 	"depura?/unsafest",
 	"devela/unsafest",
 	"espera?/unsafest",
 	"ladata?/unsafest",
 	"numera?/unsafest",
-	# "revela?/unsafest",
+	"revela?/unsafest",
 	"textos?/unsafest",
 ]
 
@@ -108,12 +115,13 @@ unsafest = [ # enables unsafe recursively
 
 nightly = [ # enables the nightly features at each crate
 	"acolor?/nightly",
+	"alazar?/nightly",
 	"depura?/nightly",
 	"devela/nightly",
 	"espera?/nightly",
 	"ladata?/nightly",
 	"numera?/nightly",
-	# "revela?/nightly",
+	"revela?/nightly",
 	"textos?/nightly",
 ]
 nightly_docs = [ # enables features for docs.rs at each crate
@@ -122,21 +130,20 @@ nightly_docs = [ # enables features for docs.rs at each crate
 	"all",
 	"unsafest",
 	"acolor/nightly_docs",
+	"alazar/nightly_docs",
 	"depura/nightly_docs",
 	"devela/nightly_docs",
 	"espera/nightly_docs",
 	"ladata/nightly_docs",
 	"numera/nightly_docs",
-	# "revela/nightly_docs",
+	"revela/nightly_docs",
 	"textos/nightly_docs",
 ]
 
 #* other features *#
 
 all = [ # enables all the optional libraries
-	"acolor", "depura", "espera", "ladata", "numera",
-	# "revela",
-	"textos"
+	"acolor", "alazar", "depura", "espera", "ladata", "numera", "revela", "textos",
 ]
 
 # ------------------------------------------------------------------------------
@@ -144,13 +151,14 @@ all = [ # enables all the optional libraries
 [dependencies]
 devela = { version= "0.8.0", default-features= false }
 
-#* +7 optional libraries *#
+#* +8 optional libraries *#
 acolor = { version= "0.0.10", optional = true, default-features= false }
+alazar = { version= "0.0.1", optional = true, default-features= false }
 depura = { version= "0.3.0", optional = true, default-features= false }
 espera = { version= "0.3.0", optional = true, default-features= false }
 ladata = { version= "0.0.29", optional = true, default-features= false }
 numera = { version= "0.4.0", optional = true, default-features= false }
-# revela = { version= "0.0.8", optional = true, default-features= false }
+revela = { version= "0.0.9", optional = true, default-features= false }
 textos = { version= "0.0.3", optional = true, default-features= false }
 
 [dev-dependencies]

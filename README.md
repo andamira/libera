@@ -17,11 +17,13 @@ with a minimal amount of cognitive complexity.
 Here’s a list overview of the current libraries, in alphabetic order.
 
 - [`acolor`](https://crates.io/crates/acolor): color types and operations.
+- [`alazar`](https://crates.io/crates/alazar): random number generators.
 - [`depura`](https://crates.io/crates/depura): logging, debugging, benchmarks.
 - [`devela`](https://crates.io/crates/devela): rust development extensions.
 - [`espera`](https://crates.io/crates/espera): time, date, rates, loop control.
-- [`ladata`](https://crates.io/crates/ladata): mixed & modular data structures.
+- [`ladata`](https://crates.io/crates/ladata): comprehensive data structures.
 - [`numera`](https://crates.io/crates/numera): numbers, operations, numerals.
+- [`revela`](https://crates.io/crates/revela): multi-backend user interface.
 - [`textos`](https://crates.io/crates/textos): strings, texts, unicode.
 
 ## Status

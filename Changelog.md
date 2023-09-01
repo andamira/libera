@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 ## [Unreleased]
 
+### Added
+- reexport the libraries: `alazar`, `revela`.
+
 ## [0.0.4] - 2023-08-30
 
 ### Added

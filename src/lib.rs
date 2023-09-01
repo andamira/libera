@@ -24,11 +24,12 @@ use macros::reexport;
 reexport![devela];
 reexport![
     acolor "acolor",
+    alazar "alazar",
     depura "depura",
     espera "espera",
     ladata "ladata",
     numera "numera",
-    // revela "revela",
+    revela "revela",
     textos "textos",
 ];
 
@@ -39,11 +40,12 @@ pub mod all {
     reexport![@all devela];
     reexport![@all
         acolor "acolor",
+        alazar "alazar",
         depura "depura",
         espera "espera",
         ladata "ladata",
         numera "numera",
-        // revela "revela",
+        revela "revela",
         textos "textos",
     ];
 }
