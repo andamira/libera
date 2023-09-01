@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 ## [Unreleased]
 
+## [0.0.5] - 2023-09-01
+
 ### Added
 - reexport the libraries: `alazar`, `revela`.
 
@@ -27,7 +29,8 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 ## [0.0.1] - 2022-05-19
 
-[unreleased]: https://github.com/andamira/libera/compare/v0.4.0...HEAD
+[unreleased]: https://github.com/andamira/libera/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/andamira/libera/releases/tag/v0.5.0
 [0.4.0]: https://github.com/andamira/libera/releases/tag/v0.4.0
 [0.3.0]: https://github.com/andamira/libera/releases/tag/v0.3.0
 [0.2.0]: https://github.com/andamira/libera/releases/tag/v0.2.0
