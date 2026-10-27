@@ -1,45 +1,18 @@
 # libera
 
 [![Crate](https://img.shields.io/crates/v/libera.svg)](https://crates.io/crates/libera)
-[![API](https://docs.rs/libera/badge.svg)](https://docs.rs/libera/)
-[![MSRV: 1.72.0](https://flat.badgen.net/badge/MSRV/1.72.0/purple)](https://releases.rs/docs/1.72.0/)
+[![MSRV](https://img.shields.io/crates/msrv/libera?label=MSRV)](https://crates.io/crates/libera)
+[![docs.rs](https://img.shields.io/docsrs/libera?label=docs.rs)](https://docs.rs/libera/latest/libera/)
+<!-- [![WIP docs](https://img.shields.io/badge/docs-WIP-blue)](https://andamira.github.io/libera/wip/libera/) -->
 
-A suite of modular, multidisciplinary, mutually coherent libraries.
+---
 
-A collection of Rust libraries designed to provide easy-to-use solutions across
-a varied range of fields and complementary needs.
+> A liberating activation of potential.
 
-They are intended to be a cohesive set of tools that work seamlessly together,
-with a minimal amount of cognitive complexity.
+`libera` is an experimental Rust library built upon [`devela`]. Its direction
+is deliberately open: pursue expressive composition through small, practical
+implementations, and let the public vocabulary emerge from their needs.
 
-## Libraries
+This repository presently contains scaffolding rather than a settled API.
 
-Here’s a list overview of the current libraries, in alphabetic order.
-
-- [`acolor`](https://crates.io/crates/acolor): color types and operations.
-- [`alazar`](https://crates.io/crates/alazar): random number generators.
-- [`depura`](https://crates.io/crates/depura): logging, debugging, benchmarks.
-- [`devela`](https://crates.io/crates/devela): rust development extensions.
-- [`espera`](https://crates.io/crates/espera): time, date, rates, loop control.
-- [`ladata`](https://crates.io/crates/ladata): comprehensive data structures.
-- [`numera`](https://crates.io/crates/numera): numbers, operations, numerals.
-- [`revela`](https://crates.io/crates/revela): multi-backend user interface.
-- [`textos`](https://crates.io/crates/textos): strings, texts, unicode.
-
-## Status
-
-Libera’s libraries are currently in an experimental stage of development.
-
-## License
-This project is dual licensed under either [MIT](LICENSE-MIT)
-or [Apache-2.0](LICENSE-APACHE) at your option.
-
-## Contributing
-
-Contributions are welcomed to help refine and improve this library over time.
-If you notice a bug, have an idea for a new feature, or simply want to suggest
-improvements to the existing codebase, please get in touch.
-
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in the work by shall be dual licensed as above,
-without any additional terms or conditions.
+[`devela`]: https://github.com/andamira/devela

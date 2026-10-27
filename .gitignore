@@ -1,3 +1,8 @@
-/target
+# Rust
+
+target/
 Cargo.lock
-_*
+
+# Local tool overrides
+
+/tools/_local
